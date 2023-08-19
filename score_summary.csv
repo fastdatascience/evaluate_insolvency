@@ -1,9 +1,9 @@
-model	dataset	model + dataset	median_response_time	total_score	available_score	percentage_score
-gpt-3.5-turbo	train	gpt-3.5-turbo + train	5.222760081291199	0.0	25	0.0
-gpt-3.5-turbo	test	gpt-3.5-turbo + test	2.955362796783448	0.0	6	0.0
-gpt-4	train	gpt-4 + train	21.64164924621582	0.0	25	0.0
-gpt-4	test	gpt-4 + test	7.643978595733643	0.0	6	0.0
-insolvency_bot_with_gpt-3.5-turbo	train	insolvency_bot_with_gpt-3.5-turbo + train	8.87703549861908	1.5	25	6.0
-insolvency_bot_with_gpt-3.5-turbo	test	insolvency_bot_with_gpt-3.5-turbo + test	7.420558452606201	0.0	6	0.0
-insolvency_bot_with_gpt-4	train	insolvency_bot_with_gpt-4 + train	30.76944649219513	0.0	25	0.0
-insolvency_bot_with_gpt-4	test	insolvency_bot_with_gpt-4 + test	26.80529379844665	1.5	6	25.0
+model	dataset	median_response_time	total_score	available_score	percentage_score
+gpt-3.5-turbo	train	5.222760081291199	63.5	298	21.308724832214764
+gpt-3.5-turbo	test	2.955362796783448	0.0	6	0.0
+gpt-4	train	21.64164924621582	89.0	298	29.86577181208054
+gpt-4	test	7.643978595733643	0.0	6	0.0
+insolvency_bot_with_gpt-3.5-turbo	train	5.474655866622925	88.0	298	29.53020134228188
+insolvency_bot_with_gpt-3.5-turbo	test	7.420558452606201	0.0	6	0.0
+insolvency_bot_with_gpt-4	train	33.8770387172699	100.0	298	33.557046979865774
+insolvency_bot_with_gpt-4	test	26.80529379844665	0.0	6	0.0
