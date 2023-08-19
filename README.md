@@ -46,3 +46,12 @@ python evaluate_responses_with_mark_scheme.py gpt-4 test
 python evaluate_responses_with_mark_scheme.py insolvency_bot_with_gpt-3.5-turbo test
 python evaluate_responses_with_mark_scheme.py insolvency_bot_with_gpt-4 test
 ```
+
+# Short cut: scripts to run and evaluate all models
+
+These scripts run all of the above commands.
+
+```
+./run_all_models.sh
+./evaluate_all_models.sh
+```

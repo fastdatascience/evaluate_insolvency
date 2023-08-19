@@ -109,11 +109,9 @@ for idx in range(len(df)):
                 s = points[j] / 2
             score += s
             scores_this_q.append(s)
-            break
 
         scores[idx] = score
         scores_broken_down[idx] = json.dumps(scores_this_q)
-        break
 df["mark_scheme"] = mark_scheme_col
 df["bot_score"] = scores
 df["bot_score_breakdown"] = scores_broken_down
