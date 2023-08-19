@@ -6,11 +6,12 @@ Usage: python generate_responses_gpt.py gpt-3.5-turbo|gpt-4 train|test
 You need to set environment variable OPENAI_API_KEY first.
 '''
 
+import os
 import re
 import sys
 import time
+import traceback
 
-import os
 import pandas as pd
 import requests
 
@@ -53,7 +54,7 @@ for idx in range(len(df)):
     starttime = time.time()
 
     json_data = {
-        'model': 'gpt-3.5-turbo',
+        'model': MODEL,
         'messages': [
             {"role": "user", "content": q},
         ],
