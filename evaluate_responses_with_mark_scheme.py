@@ -58,10 +58,10 @@ max_points_available  = [0] * len(df)
 for idx in range(len(df)):
     question_no = df.question_no.iloc[idx]
     answer = df[column_to_evaluate].iloc[idx]
-    max_points_available[idx] = question_no_to_max_points_available[question_no]
-    print("EVALUATING ANSWER: ", answer)
 
     if question_no in set(df_mark_scheme.question_no):
+        max_points_available[idx] = question_no_to_max_points_available[question_no]
+        print("EVALUATING ANSWER: ", answer)
         print("MARK SCHEME QUESTION", question_no)
         rows = df_mark_scheme[df_mark_scheme.question_no == question_no]
         criteria = list(rows.criterion)
