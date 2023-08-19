@@ -1,7 +1,7 @@
 '''
-Run all train or test questions through GPT-3-5 Turbo or GPT-4
+Run all train or test questions through Insolvency Bot
 
-Usage: python generate_responses_gpt.py gpt-3.5-turbo|gpt-4 train|test
+Usage: python generate_responses_insolvency_bot.py gpt-3.5-turbo|gpt-4 train|test
 
 You need to set environment variable OPENAI_API_KEY first.
 '''
@@ -11,13 +11,14 @@ import re
 import sys
 import time
 import traceback
-
 import pandas as pd
 import requests
+sys.path.append("../insolvency/")
+from insolvency_bot import answer_question
 
 SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4'}
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
-COMMAND_LINE_PARAM = f"Usage: python generate_responses_gpt.py {SUPPORTED_MODELS_CONCAT} train|test"
+COMMAND_LINE_PARAM = f"Usage: python generate_responses_insolvency_bot.py {SUPPORTED_MODELS_CONCAT} train|test"
 
 if len(sys.argv) != 3:
     print(COMMAND_LINE_PARAM)
@@ -46,6 +47,9 @@ headers = {
 bot_responses = [""] * len(df)
 bot_times = [0] * len(df)
 bot_attempts = [0] * len(df)
+bot_statutes = [""] * len(df)
+bot_cases = [""] * len(df)
+bot_forms = [""] * len(df)
 for idx in range(len(df)):
     q = df.question_text.iloc[idx]
     q_no = df.question_no.iloc[idx]
@@ -53,32 +57,36 @@ for idx in range(len(df)):
 
     starttime = time.time()
 
-    json_data = {
-        'model': MODEL,
-        'messages': [
-            {"role": "user", "content": q},
-        ],
-    }
     for attempt in range(3):
         print("attempt calling GPT API:", attempt)
         try:
-            response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers, json=json_data)
-            r = response.json()["choices"][0]["message"]["content"]
+            insolvency_bot_response_json = answer_question(q, False, MODEL)
+            r = insolvency_bot_response_json["_response"]
+            statutes = "|".join(insolvency_bot_response_json["legislation"])
+            cases = "|".join(insolvency_bot_response_json["cases"])
+            forms = "|".join(insolvency_bot_response_json["forms"])
             break
         except:
             print("Try again")
             traceback.print_exc()
             time.sleep(10)
+
     bot_responses[idx] = re.sub(r'\s+', ' ', r)
 
     endtime = time.time()
     bot_times[idx] = endtime - starttime
     bot_attempts[idx] = attempt + 1
+    bot_statutes[idx] = statutes
+    bot_cases[idx] = cases
+    bot_forms[idx] = forms
 
     print("\tReceived response: ", r)
 
 df["bot_response"] = bot_responses
 df["bot_response_time"] = bot_times
 df["bot_response_attempts"] = bot_attempts
+df["bot_statutes"] = bot_statutes
+df["bot_cases"] = bot_cases
+df["bot_forms"] = bot_forms
 
-df.to_csv(f"output_{TRAIN_TEST}_{MODEL}.csv", sep="\t", encoding="utf-8", index=False)
+df.to_csv(f"output_{TRAIN_TEST}_insolvency_bot_with_{MODEL}.csv", sep="\t", encoding="utf-8", index=False)

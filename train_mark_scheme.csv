@@ -1,0 +1,115 @@
+criterion_no	question_no	points	criterion
+1	Q1	3	Does the lawyer mention the key features of a director?
+2	Q1	2	Does the lawyer refer to sections 154-155 CA 2006?
+3	Q1	3	Does the lawyer identify the criteria for being a director under the law?
+4	Q1	2	Does the lawyer refer to sections 250-251 CA 2006?
+5	Q1	2	Does the lawyer refer to the circumstances in which a director can be removed from their position?
+6	Q1	3	Does the lawyer refer to s.168 CA 2006?
+7	Q1	3	Does the lawyer refer to any relevant case law when advice is provided?
+8	Q1	1	Does the lawyer ask which form was signed? Does the lawyer say that you need to fill out Companies House Form TM01 to terminate an appointment of a director?
+9	Q1	3	Does the lawyer refer to relevant case law?
+10	Q1	3	Does the lawyer provide the correct advice?
+11	Q2	2	Does the lawyer ask if all companies involved are limited liability companies?
+12	Q2	2	Does the lawyer ask which kind of contract the petitioner had with X?
+13	Q2	2	Does the lawyer outline the requirements for lifting the corporate veil?
+14	Q2	3	Does the lawyer outline what the options are if X enters into a formal insolvency procedure (particularly administration and liquidation)?
+15	Q2	3	Does the lawyer mention that employee wages have a preferential treatment in insolvency?
+16	Q2	2	Does the lawyer refer to ss.166-184 ERA 1996 and Schedule 6 IA 1986?
+17	Q2	3	Does the lawyer mention that occupational or personal pension schemes are protected under the law, and that the employee can claim unpaid contributions to the Secretary of State?
+18	Q2	2	Does the lawyer refer to ss.124-126 Pension Schemes Act 1993?
+19	Q2	3	Does the lawyer refer to relevant case law?
+20	Q2	3	Does the lawyer provide the correct advice?
+21	Q3	3	Does the lawyer refer to the relevant statutes (ss. 123-124 IA 1986) to determine if a company (like Company B) is insolvent?
+22	Q3	2	Does the lawyer identify the different forms of liquidation, and the circumstances in which a company can be liquidated? 
+23	Q3	2	Does the lawyer refer to s. 122 IA 1986? 
+24	Q3	3	Does the lawyer identify the powers the courts have when hearing an insolvency petition? 
+25	Q3	2	Does the lawyer refer to ss.125-128 IA 1986? 
+26	Q3	3	Does the lawyer identify the duties and powers of insolvency practitioners and official receivers? 
+27	Q3	2	Does the lawyer refer to ss. 143-146A IA 1986? 
+28	Q3	2	Does the lawyer say that the liquidator could settle the dispute with company B and/or the possibility of exploring alternative rescue options (such as a company voluntary arrangement, a scheme of arrangement, a restructuring plan or a light-touch administration procedure (in which the debtor remains the director of their own company during administration)? 
+29	Q3	3	Does the lawyer refer to any relevant case law? 
+30	Q3	3	Does the lawyer provide the correct advice?
+31	Q4	2	Does the lawyer ask which type of bankruptcy procedure has been opened against the director (if any)?
+32	Q4	2	Does the lawyer outline the requirements to be appointed as a director under English law?
+33	Q4	2	Does the lawyer refer to ss.250-251 IA 1986?
+34	Q4	3	Does the lawyer outline the principle of separate legal personality?
+35	Q4	3	Does the lawyer outline the exceptions to the principle of separate legal personality?
+36	Q4	2	Does the lawyer mention that directors owe fiduciary duties to the company?
+37	Q4	2	Does the lawyer refer to ss.171-177 CA 2006?
+38	Q4	3	Does the lawyer mention that piercing the corporate veil may occur as a result of the director breaching their fiduciary duties towards the company?
+39	Q4	3	Does the lawyer refer to relevant case law?
+40	Q4	3	Does the lawyer provide the correct advice?
+41	Q5	3	Does the lawyer ask how the company was dissolved?
+42	Q5	2	Does the lawyer ask for the forms submitted for dissolving a company?
+43	Q5	3	Does the lawyer identify the different forms of liquidation, and the circumstances in which a company can be liquidated? 
+44	Q5	2	Does the lawyer refer to s. 122 IA 1986? 
+45	Q5	2	Does the lawyer identify the powers the courts have when hearing an insolvency petition? 
+46	Q5	2	Does the lawyer identify the duties and powers of insolvency practitioners and official receivers? 
+47	Q5	3	Does the lawyer outline the principle of separate legal personality?
+48	Q5	2	Does the lawyer outline the exceptions to the principle of separate legal personality?
+49	Q5	3	Does the lawyer refer to relevant case law?
+50	Q5	3	Does the lawyer provide the correct advice?
+51	Q6	5	Does the lawyer ask what kind of formal insolvency procedure has the company been admitted to?
+52	Q6	4	Does the lawyer outline the duties of the members of the creditors’ committee? 
+53	Q6	3	Does the lawyer outline the procedure for removing a member of the creditors’ committee? 
+54	Q6	3	Does the lawyer say that the matter is regulated by the Insolvency Rules 2016? 
+55	Q6	5	Does the lawyer refer to any relevant case law? 
+56	Q6	5	Does the lawyer provide the correct advice?
+57	Q7	2	Does the lawyer say the company should not usually require liquidators purely for the reason of being unable to terminate the telecoms contract?
+58	Q7	2	Does the lawyer say that potentially, the company may face an insolvent liquidation if the telecom company refuses to compromise or if the contract is not assigned to a third party? 
+59	Q7	3	Does the lawyer identify the different forms of liquidation, and the circumstances in which a company can be liquidated? 
+60	Q7	2	Does the lawyer refer to s. 122 IA 1986? 
+61	Q7	3	Does the lawyer identify the powers the courts have when hearing an insolvency petition? 
+62	Q7	2	Does the lawyer refer to ss.125-128 IA 1986?
+63	Q7	3	Does the lawyer outline in which circumstances a company can be declared insolvent? 
+64	Q7	2	Does the lawyer refer to the relevant statutes (ss. 123-124 IA 1986) to determine if a company is insolvent?
+65	Q7	3	Does the lawyer refer to any relevant case law? 
+66	Q7	3	Does the lawyer provide the correct advice?
+67	Q9	3	Does the lawyer mention the key liquidation options available to the company (i.e. members’ voluntary liquidation and creditors’ voluntary liquidation)?
+68	Q9	3	Does the lawyer mention the key restructuring options available to the company (i.e. administration and company voluntary arrangements)?
+69	Q9	2	Does the lawyer mention other important restructuring options (i.e. pre-packaged administration, schemes of arrangement and restructuring plans)?
+70	Q9	2	Does the lawyer refer to the relevant sections of the law (Insolvency Act 1986 and Companies Act 2006) to describe the liquidation and restructuring options available to the company?
+71	Q9	2	Does the lawyer mention that directors owe fiduciary duties to the company (ss.171-177 CA 2006)?
+72	Q9	3	Does the lawyer refers to the consequences associated with misfeasance (s.212 IA 1986) and wrongful trading (s.214 IA 1986)?
+73	Q9	2	Does the lawyer outline the directors’ duties when the company is insolvent?
+74	Q9	2	Does the lawyer warn that some transactions made soon before insolvency could be challenged as being unlawful (ss.238-239, 244-245, 423 IA 1986)?
+75	Q9	3	Does the lawyer refer to relevant case law?
+76	Q9	3	Does the lawyer provide the correct advice?
+77	Q10	3	Does the lawyer mention the key liquidation options available to the company (i.e. members’ voluntary liquidation and creditors’ voluntary liquidation)?
+78	Q10	2	Does the lawyer mention the key bankruptcy options (e.g. bankruptcy, IVA, restructuring plan) available to the company director?
+79	Q10	2	Does the lawyer refer to the relevant sections of the law (Insolvency Act 1986 and Companies Act 2006) to describe the liquidation and restructuring options available to the company?
+80	Q10	3	Does the lawyer mention the potential civil liability of the previous accountants for failing to act according to a professional standard?
+81	Q10	2	Does the lawyer mention that directors owe fiduciary duties to the company (ss.171-177 CA 2006)? Does the lawyer outline the directors’ duties when the company is insolvent?
+82	Q10	2	Does the lawyer outline the personal and professional consequences following a potential disqualification of the company director?
+83	Q10	3	Does the lawyer refers to the consequences associated with misfeasance (s.212 IA 1986), fraudulent (s.213 IA 1986) and wrongful trading (s.214 IA 1986)?
+84	Q10	2	Does the lawyer warn that some transactions made soon before insolvency could be challenged as being unlawful (ss.238-239, 244-245, 423 IA 1986)?
+85	Q10	3	Does the lawyer refer to relevant case law?
+86	Q10	3	Does the lawyer provide the correct advice?
+87	Q12	3	Does the lawyer identify the different forms of liquidation, and the circumstances in which a company can be liquidated? 
+88	Q12	2	Does the lawyer refer to s. 122 IA 1986? 
+89	Q12	3	Does the lawyer outline in which circumstances a company can be declared insolvent? 
+90	Q12	2	Does the lawyer refer to the relevant statutes (ss. 123-124 IA 1986) to determine if a company is insolvent?
+91	Q12	3	Does the lawyer say to pay creditors in order according to the ranking in insolvency? 
+92	Q12	2	Does the lawyer mention that directors owe fiduciary duties to the company (ss.171-177 CA 2006)? Does the lawyer outline the directors’ duties when the company is insolvent?
+93	Q12	2	Does the lawyer outline the personal and professional consequences following a potential disqualification of the company director?
+94	Q12	2	Does the lawyer mention that formalities need to be fulfilled before the company can be struck off the Companies House registry?
+95	Q12	3	Does the lawyer refer to any relevant case law?
+96	Q12	3	Does the lawyer provide the correct advice?
+97	Q13	3	Does the lawyer encourage the petitioner to look at the partnership agreement? 
+98	Q13	3	Does the lawyer mention that directors owe fiduciary duties to the partnership (ss.171-177 CA 2006)? 
+99	Q13	3	Does the lawyer outline the consequences for directors in case of misfeasance (s.212 IA 1986), fraudulent (s.213 IA 1986) and wrongful trading (s. 214 IA 1986)?
+100	Q13	3	Does the lawyer refer to the rules regulating transactions defrauding creditors (s.423 IA 1986)?
+101	Q13	2	Does the lawyer outline the personal and professional consequences following a potential disqualification of the director?
+102	Q13	2	Does the lawyer mention that formalities need to be fulfilled before the partnership can be struck off the Companies House registry?
+103	Q13	3	Does the lawyer refer to any relevant case law?
+104	Q13	3	Does the lawyer provide the correct advice?
+105	Q14	3	Does the lawyer identify the different forms of liquidation, and the circumstances in which a company can be liquidated? 
+106	Q14	2	Does the lawyer refer to s. 122 IA 1986? 
+107	Q14	3	Does the lawyer identify the powers the courts have when hearing an insolvency petition? 
+108	Q14	2	Does the lawyer refer to ss.125-128 IA 1986?
+109	Q14	3	Does the lawyer outline in which circumstances a company can be declared insolvent? 
+110	Q14	2	Does the lawyer refer to the relevant statutes (ss. 123-124 IA 1986) to determine if a company is insolvent?
+111	Q14	3	Does the lawyer say to pay creditors in order according to the ranking in insolvency? 
+112	Q14	2	Does the lawyer say to pay secured creditors before unsecured creditors?
+113	Q14	3	Does the lawyer refer to any relevant case law?
+114	Q14	3	Does the lawyer provide the correct advice?
