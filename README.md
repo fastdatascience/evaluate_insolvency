@@ -1,4 +1,6 @@
-# evaluate_insolvency
+# Insolvency evaluation scripts
+
+You can try the insolvency bot at https://fastdatascience.com/insolvency
 
 The training questions are in `train_questions.csv`.
 
