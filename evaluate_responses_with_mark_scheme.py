@@ -48,6 +48,11 @@ headers = {
 
 column_to_evaluate = 'bot_response'
 
+re_yes = re.compile(r'(?i)\b(?:yes|definitely|certainly)\b')
+re_maybe = re.compile(r'(?i)\b(?:maybe|however|but|correct)\b')
+re_mention_insolvency_act = re.compile(r'(?i)\b(?:ia|insolvency act|1986)\b')
+re_mention_companies_act = re.compile(r'(?i)\b(?:ca|companies act|2006)\b')
+
 question_no_to_max_points_available = dict(df_mark_scheme.groupby("question_no").sum()["points"])
 
 mark_scheme_col = [""] * len(df)
@@ -72,6 +77,7 @@ for idx in range(len(df)):
         for j in range(len(rows)):
             criterion = criteria[j]
             criterion = re.sub(r'\s+', ' ', criterion)
+            print("\nCRITERION: ", criterion)
 
             if pd.isna(answer) or answer is None:
                 continue
@@ -81,19 +87,30 @@ for idx in range(len(df)):
                 'messages': [
                     {"role": "user", "content": "The following is a lawyer's response to a question."},
                     {"role": "user", "content": answer},
-                    {"role": "user", "content": criterion}
+                    {"role": "user", "content": criterion},
+                    {"role": "user", "content": 'Answer with "yes", "no", or "maybe".'}
                 ],
+                "max_tokens":10
             }
             for attempt in range(3):
                 print("attempt", attempt)
                 try:
                     response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers,
                                              json=json_data)
+                    time.sleep(2)  # avoid rate limiting by OpenAI
+                    if response.status_code != 200:
+                        print ("\tResponse status code =", response.status_code)
+                        if attempt < 2:
+                            print("\tTry again")
+                        time.sleep(10)
+                        continue
                     r = response.json()["choices"][0]["message"]["content"]
                     r = re.sub(r'\s+', ' ', r)
                     break
                 except:
-                    print("Try again")
+                    print ("\tException encountered when calling OpenAI API.")
+                    if attempt < 2:
+                        print("\tTry again")
                     traceback.print_exc()
                     time.sleep(10)
 
@@ -103,10 +120,19 @@ for idx in range(len(df)):
             r = r.strip()
 
             s = 0
-            if r.lower().startswith("yes"):
+            if re_yes.findall(r):
                 s = points[j]
-            elif "however" in r.lower() or "generally correct" in r.lower():
+            elif re_maybe.findall(r):
                 s = points[j] / 2
+            elif re_mention_insolvency_act.findall(criterion) and re_mention_insolvency_act.findall(answer):
+                s = points[j] / 2
+                print ("\tBoth bot answer and assessment criterion mention Insolvency Act, although not necessarily same section. Half points awarded.")
+            elif re_mention_companies_act.findall(criterion) and re_mention_companies_act.findall(answer):
+                s = points[j] / 2
+                print(
+                    "\tBoth bot answer and assessment criterion mention Companies Act, although not necessarily same section. Half points awarded.")
+
+            print (f"\tScore for this criterion: {s}")
             score += s
             scores_this_q.append(s)
 
