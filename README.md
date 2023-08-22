@@ -46,6 +46,8 @@ The test questions are in [test_questions.csv](test_questions.csv).
 
 See [train_mark_scheme.csv](train_mark_scheme.csv) and [test_mark_scheme.csv](test_mark_scheme.csv).
 
+For the training data, there is also [train_cases_gold_standard.csv](train_cases_gold_standard.csv) and [train_statute_gold_standard.csv](train_statute_gold_standard.csv) which define the desired cases and statutes that the bot should refer to for the training questions. These were used to refine the triage that is part of the prompt engineering, but we have not run a separate validation of the case and statute triage for the test set.
+
 ## Running the evaluation scripts
 
 To run the models and evaluation, you need to run all these scripts in sequence:
