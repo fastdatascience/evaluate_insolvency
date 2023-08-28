@@ -97,7 +97,7 @@ for idx in range(len(df)):
                 try:
                     response = requests.post('https://api.openai.com/v1/chat/completions', headers=headers,
                                              json=json_data)
-                    time.sleep(2)  # avoid rate limiting by OpenAI
+                    time.sleep(8)  # avoid rate limiting by OpenAI
                     if response.status_code != 200:
                         print ("\tResponse status code =", response.status_code)
                         if attempt < 2:
