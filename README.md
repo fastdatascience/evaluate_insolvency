@@ -104,3 +104,6 @@ These scripts run all of the above commands.
 ./evaluate_all_models.sh
 ```
 
+# Generating graphs
+
+You can generate the graphs in the paper by running `GenerateSummaryGraphs.ipynb` which will read the results files `scores_***.csv`.
