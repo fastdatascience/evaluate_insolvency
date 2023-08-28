@@ -2,6 +2,8 @@
 
 You can try the insolvency bot at https://fastdatascience.com/insolvency
 
+All bot responses to the training and test questions are in [all_responses_test.md](all_responses_test.md) and [all_responses_train.md](all_responses_train.md).
+
 ## Training questions
 
 The training questions are in [train_questions.csv](train_questions.csv).
