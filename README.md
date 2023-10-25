@@ -12,6 +12,8 @@
 
 You can try the insolvency bot at https://fastdatascience.com/insolvency
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8292105.svg)](https://doi.org/10.5281/zenodo.8292105)
+
 Read the long version of our paper (pending publication) here:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10029735.svg)](https://doi.org/10.5281/zenodo.10029735)
 
