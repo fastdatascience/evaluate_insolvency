@@ -9,7 +9,12 @@
 
 # Insolvency evaluation scripts
 
+
 You can try the insolvency bot at https://fastdatascience.com/insolvency
+
+Read the long version of our paper (pending publication) here:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10029735.svg)](https://doi.org/10.5281/zenodo.10029735)
+
 
 All bot responses to the training and test questions are in [all_responses_test.md](all_responses_test.md) and [all_responses_train.md](all_responses_train.md).
 
