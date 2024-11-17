@@ -1,0 +1,5 @@
+requests
+azure-storage-blob
+numpy==1.25.1
+openai==0.27.8
+pandas==2.2.3

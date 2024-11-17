@@ -16,7 +16,7 @@ import requests
 sys.path.append("../insolvency/")
 from insolvency_bot import answer_question
 
-SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4'}
+SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4', 'gpt-4o'}
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
 COMMAND_LINE_PARAM = f"Usage: python generate_responses_insolvency_bot.py {SUPPORTED_MODELS_CONCAT} train|test"
 
