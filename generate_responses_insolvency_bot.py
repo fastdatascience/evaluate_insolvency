@@ -16,7 +16,7 @@ import requests
 sys.path.append("../insolvency/")
 from insolvency_bot import answer_question
 
-SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4', 'gpt-4o', 'gemini-2.0-pro-exp-02-05', 'claude-3-5-sonnet-20241022', 'deepseek-chat', 'llama3.1-70b', 'DeepSeek-R1', 'Mistral-Large-2411'}
+SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4', 'gpt-4o', 'gpt-5', 'gpt-5.1', 'gpt-5.2', 'gpt-5.3', 'claude-opus-4-6', 'qwen-plus', 'gemini-2.0-pro-exp-02-05', 'claude-3-5-sonnet-20241022', 'deepseek-chat', 'llama3.1-70b', 'DeepSeek-R1', 'Mistral-Large-2411', 'qwen3.5-plus', 'gemini-2.5-pro'}
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
 COMMAND_LINE_PARAM = f"Usage: python generate_responses_insolvency_bot.py {SUPPORTED_MODELS_CONCAT} train|test"
 

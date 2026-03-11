@@ -25,7 +25,7 @@ import vertexai
 
 # end imports for Gemini
 
-SUPPORTED_MODELS = {'gemini-2.0-pro-exp-02-05'}
+SUPPORTED_MODELS = {'gemini-2.0-pro-exp-02-05', 'gemini-2.5-pro'}
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
 COMMAND_LINE_PARAM = f"Usage: python generate_responses_gemini.py {SUPPORTED_MODELS_CONCAT} train|test"
 
@@ -44,7 +44,7 @@ TRAIN_TEST = sys.argv[2]
 print(f"Dataset: {TRAIN_TEST}")
 
 # Begin get Gemini credentials
-with open("/home/thomas/projects_client/wellcome/matching/.env", "r", encoding="utf-8") as f:
+with open("/home/thomas/projects_internal/fds-social-media-manager/fds-social-media-automation-a88caa6fd5f2.json", "r", encoding="utf-8") as f:
   GOOGLE_APPLICATION_CREDENTIALS_ENV_VAR = f.read()
 
 GOOGLE_APPLICATION_CREDENTIALS_JSON = re.sub("'.*?", '',

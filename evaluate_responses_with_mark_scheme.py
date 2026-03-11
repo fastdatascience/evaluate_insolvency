@@ -16,7 +16,7 @@ import pandas as pd
 import requests
 
 SUPPORTED_MODELS = {
-'gpt-3.5-turbo', 'gpt-4', 'gpt-4o', 'gpt-4.5-preview-2025-02-27', 'gemini-2.0-pro-exp-02-05',
+'gpt-3.5-turbo', 'gpt-4', 'gpt-5', 'gpt-5.1', 'gpt-5.2',  'gpt-4o', 'gpt-4.5-preview-2025-02-27', 'gemini-2.0-pro-exp-02-05',
  'claude-3-5-sonnet-20241022',
  'deepseek-chat',
  'llama3.1-70b',
@@ -25,11 +25,15 @@ SUPPORTED_MODELS = {
  'insolvency_bot_with_claude-3-5-sonnet-20241022',
  'insolvency_bot_with_deepseek-chat',
  'insolvency_bot_with_llama3.1-70b',
- 
+ 'claude-opus-4-6',
+'insolvency_bot_with_claude-opus-4-6',
  'DeepSeek-R1',
  'insolvency_bot_with_DeepSeek-R1',
  'Mistral-Large-2411',
  'insolvency_bot_with_Mistral-Large-2411',
+ 'insolvency_bot_with_gpt-4.5-preview-2025-02-27',
+ 'insolvency_bot_with_gpt-5', 'insolvency_bot_with_gpt-5.1', 'insolvency_bot_with_gpt-5.2',
+    'qwen-plus', 'insolvency_bot_with_qwen-plus',    'qwen3.5-plus', 'insolvency_bot_with_qwen3.5-plus','gemini-2.5-pro','insolvency_bot_with_gemini-2.5-pro'
 }
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
 COMMAND_LINE_PARAM = f"Usage: python evaluate_bot_responses_with_mark_scheme.py {SUPPORTED_MODELS_CONCAT} train|test"

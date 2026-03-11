@@ -15,7 +15,7 @@ import traceback
 import pandas as pd
 import requests
 
-SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4', 'gpt-4o', 'gpt-4.5-preview-2025-02-27'}
+SUPPORTED_MODELS = {'gpt-3.5-turbo', 'gpt-4', 'gpt-4o', 'gpt-5.1', 'gpt-5.2', 'gpt-5.3'}
 SUPPORTED_MODELS_CONCAT = '|'.join(SUPPORTED_MODELS)
 COMMAND_LINE_PARAM = f"Usage: python generate_responses_gpt.py {SUPPORTED_MODELS_CONCAT} train|test"
 
